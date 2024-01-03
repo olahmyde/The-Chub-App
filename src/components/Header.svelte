@@ -24,7 +24,7 @@
             <a class="nav-links" href='#blog'>Blog</a>
         </nav>
         
-        <button on:click={downloadApp} class="buttons header-button my-[14px] mr-[16px] self-center"> Get Started</button>
+        <button on:click={downloadApp} class="buttons header-button my-[14px] mr-[16px] self-center duration-200"> Get Started</button>
     </div>
     
 </header>

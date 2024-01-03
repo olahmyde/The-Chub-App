@@ -145,3 +145,9 @@ h1, h2, h3, .glancyr {
     gap: 10px;
     flex-shrink: 0;
 }
+
+.download-button {
+    border-radius: 100px;
+    border: 1px solid #690571;
+    background: #33023B; 
+}
