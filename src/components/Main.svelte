@@ -2,29 +2,40 @@
     import PlaystoreImg from "../assets/icons8-playstore-48.png";
     import AppstoreImg from "../assets/icons8-app-store-48.png";
     import ConnectDot from "../assets/connect-svg.png";
-    
+    import ChubLogo from "../assets/wLogo_white.png"
     function LearnMore(){
         location.href="#downloadApp";
     }
 </script>
 
-<main class="grid justify-center p-4 top-[293px] absolute w-full">
-    
+<main class="max-md:top-[80px] grid justify-center p-4 top-[293px] absolute w-full">
+    <menu>
+        <!-- <a class="nav--active" href='#home'><i class="fa-solid fa-house"></i></a> -->
+        <a class="nav--active" href='#home'>Home</a>
+        <a href='#features'> Features</a>
+        <a href='#integration'> Integration</a>
+        <a href='#blog'> Blog</a>
+        <a href='#about'> About</a>
+    </menu>
     <!-- SECTION ONE-->
-    <section id="title" class="mx-[40px] grid grid-cols-1 bg-transparent">
-        <h1 class="text-[88px] leading-[100px] text-center">Master your goals with <span class="text-[#FA6400] glancyr">playful productivity</span></h1>
+    <section id="title" class="max-md:mx-[20px] mx-[40px] grid grid-cols-1 bg-transparent">
+        
+        <div class="justify-center mb-4 flex lg:hidden">
+            <img src="{ChubLogo}" alt="" class="w-[300px]">
+        </div>
+        <h1 class="max-md:text-[30px] max-md:leading-[1.2] text-[88px] leading-[100px] text-center">Master your goals with <span class="text-[#FA6400] glancyr">playful productivity</span></h1>
         
         <p class="text-center mt-1 font-[100]">Boost productivity and attain your set goals with our gamified aided by the power of community support and social networks</p>
         
-        <div class="flex justify-center gap-10 mt-[72px]">
+        <div class="max-md:grid max-md:mt-8 flex justify-center max-md:gap-4 gap-10 mt-[75px]">
             <a href="https://play.google.com/store/apps/details?id=com.challenge365.app&hl=en&gl=US">
-                <button class="download-button h-[80px] w-[320px] flex gap-2 leading-[2] justify-center items-center font-[300]">
+                <button class="download-button max-md:h-[70px] max-md:w-[300px] h-[80px] w-[320px] flex gap-2 leading-[2] justify-center items-center font-[300]">
                     <img class="size-[32px] bg-transparent" src={PlaystoreImg} alt="playstore-logo">Download on Playstore
                 </button>
             </a>
             
             <a href="https://apps.apple.com/ng/app/chub/id6450390309">
-                <button class="download-button h-[80px] w-[320px] flex gap-2 leading-[2] justify-center items-center font-[300]">
+                <button class="download-button max-md:h-[70px] max-md:w-[300px] h-[80px] w-[320px] flex gap-2 leading-[2] justify-center items-center font-[300]">
                     <img class="size-[32px] bg-transparent" src={AppstoreImg} alt="playstore-logo">Download on Appstore
                 </button>
             </a>
@@ -32,7 +43,7 @@
     </section>
     
     <!-- SECTION TWO-->
-    <section id="about" class="mt-[200px] h-[800px] overflow-x-scroll w-full flex gap-3 bg-[#1E0221]">
+    <section id="about" class="max-md:mt-[50px] mt-[200px] h-[800px] overflow-x-scroll w-full flex gap-3 bg-[#1E0221]">
         <div class="flex flex-row gap-3">
             <!-- Slide 1 -->
             <div class="grid grid-flow-row gap-3 bg-transparent w-[300px]">
@@ -87,7 +98,7 @@
                 </div>
             </div>
             
-            <!-- Slide 3 -->
+            <!-- Slide 5 -->
             <div class="flex flex-col gap-3 bg-blend-overlay w-[600px] bg-[#FD8C48] rounded-[40px]">
                 <div class="mt-[40%] flex flex-col items-center mx-10 text-center">
                     <div class="opacity-0 rounded-full p-3 w-fit bg-blue-500">Simplify</div>
@@ -98,6 +109,5 @@
                 </div>
             </div>
         </div>
-        
     </section>
 </main>

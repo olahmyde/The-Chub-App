@@ -1,5 +1,6 @@
 <script>
    import "../app.css";
+   import "../menu.css";
    import Header from "../components/Header.svelte";
    import Main from "../components/Main.svelte";
    import Footer from "../components/Main.svelte";
@@ -21,7 +22,7 @@
             ? "opacity-full pointer-events-auto"
             : "opacity-0 pointer-events-none")}
    >
-      <button on:click={goTop} class="arrow-button ml-auto rounded-full bg-slate-900 text-violet-400 px-3 sm:px-4 hover:bg-[#33023b] cursor-pointer bg-transparent">
+      <button on:click={goTop} class="max-md:hidden arrow-button ml-auto rounded-full bg-slate-900 text-violet-400 px-3 sm:px-4 hover:bg-[#33023b] cursor-pointer bg-transparent">
          <i class="fa-solid fa-arrow-up grid place-items-center aspect-square" />
       </button>
    </div>

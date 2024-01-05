@@ -23,8 +23,6 @@
             <a class="nav-links" href='#integration'>Integration</a>
             <a class="nav-links" href='#blog'>Blog</a>
         </nav>
-        
         <button on:click={downloadApp} class="buttons header-button my-[14px] mr-[16px] self-center duration-200"> Get Started</button>
     </div>
-    
 </header>
