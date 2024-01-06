@@ -1,8 +1,10 @@
 <script>
+    import { Splide, SplideSlide } from '@splidejs/svelte-splide';
+    import '@splidejs/svelte-splide/css';
     import PlaystoreImg from "../assets/icons8-playstore-48.png";
     import AppstoreImg from "../assets/icons8-app-store-48.png";
     import ConnectDot from "../assets/connect-svg.png";
-    import ChubLogo from "../assets/wLogo_white.png"
+    import ChubLogo from "../assets/wLogo_white.png";
     function LearnMore(){
         location.href="#downloadApp";
     }
@@ -43,8 +45,8 @@
     </section>
     
     <!-- SECTION TWO-->
-    <section id="about" class="max-md:mt-[50px] mt-[200px] h-[800px] overflow-x-scroll w-full flex gap-3 bg-[#1E0221]">
-        <div class="flex flex-row gap-3">
+    <section id="about" class="max-md:hidden mt-[200px] h-[800px] overflow-x-scroll w-full flex gap-3 bg-[#1E0221]">
+        <div class="carousel flex flex-row gap-3">
             <!-- Slide 1 -->
             <div class="grid grid-flow-row gap-3 bg-transparent w-[300px]">
                 <div class="divided-grid rounded-md flex flex-cols-2 flex-rows-2 items-end justify-end bg-[#F07DBC]">
@@ -99,7 +101,7 @@
             </div>
             
             <!-- Slide 5 -->
-            <div class="flex flex-col gap-3 bg-blend-overlay w-[600px] bg-[#FD8C48] rounded-[40px]">
+            <!-- <div class="flex flex-col gap-3 bg-blend-overlay w-[600px] bg-[#FD8C48] rounded-[40px]">
                 <div class="mt-[40%] flex flex-col items-center mx-10 text-center">
                     <div class="opacity-0 rounded-full p-3 w-fit bg-blue-500">Simplify</div>
                     <h1 class="text-[30px] mt-4 mx-[50px] leading-[1]">Embrace your Achievements</h1>
@@ -107,7 +109,7 @@
                     
                     <button on:click={LearnMore} class="buttons header-button my-[14px] mr-[16px] self-center duration-200"> Get Started</button>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 </main>
