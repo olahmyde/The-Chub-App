@@ -5,6 +5,9 @@
     import AppstoreImg from "../assets/icons8-app-store-48.png";
     import ConnectDot from "../assets/connect-svg.png";
     import ChubLogo from "../assets/wLogo_white.png";
+    import EmoticonImg from "../assets/emotion-smile.svg";
+    import LockImg from "../assets/lock-2.svg";
+    import ClockImg from "../assets/clock.svg";
     function LearnMore(){
         location.href="#downloadApp";
     }
@@ -111,5 +114,36 @@
                 </div>
             </div> -->
         </div>
+    </section>
+    
+    <!-- SECTION THREE-->
+    <section id="features" class="max-md:mt-[50px] mt-[160px] w-full grid justify-center">
+        <center class="mx-10 max-md:mx-2">
+            <h1 class="max-md:text-[30px] max-md:mx-5 max-md:leading-[1.2] md:w-[800px] text-[88px] leading-[100px] text-center">Reason Why You Should Use <span class="text-[#FA6400] glancyr">CHUB</span></h1>
+            
+            <p class="text-center mt-1 font-[100]">CHUB has several features that makes the go to for challenges</p>
+            
+            <div class="flex gap-3 my-10 max-md:mx-0 lg:gap-7">
+                <div class="mini-features bg-[#33023a] lg:w-[260px]">
+                    <img class="bg-[#3C0345]" src={EmoticonImg} alt="">
+                    <h3 class="mt-2">Easy to use</h3>
+                    <p>Easy to use for everyone and simple</p>
+                </div>
+                
+                <div class="mini-features bg-[#690571] lg:w-[260px]">
+                    <img class="bg-[#81108A]" src={ClockImg} alt="">
+                    <h3 class="mt-2">Real time</h3>
+                    <p>Connect with customer real time</p>
+                </div>
+                
+                <div class="mini-features bg-[#33023a] lg:w-[260px]">
+                    <img class="bg-[#3C0345]" src={LockImg} alt="">
+                    <h3 class="mt-2">Safety & Privacy</h3>
+                    <p>Easy to use for everyone and simple</p>
+                </div>
+            </div>
+        </center>
+        
+        
     </section>
 </main>

@@ -187,3 +187,29 @@ h3,
 .carousel {
    animation: slideAnimation 60s ease-in-out infinite;
 }
+
+.mini-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.mini-features img {
+    width: 44px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .mini-features {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        flex-direction: column;
+        font-size: 0.6rem;
+        border-radius: 10px;
+    }
+}
