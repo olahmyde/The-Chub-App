@@ -8,8 +8,16 @@
     import EmoticonImg from "../assets/emotion-smile.svg";
     import LockImg from "../assets/lock-2.svg";
     import ClockImg from "../assets/clock.svg";
+    import CylinderImg from "../assets/7e12243d3becd9ddddaac792c62746cd.png";
+    import EllipsesImg from "../assets/Mask_group.svg";
+    import BluePillImg from "../assets/Pill-Blue-Glossy-2.png";
+    import SalyImg from "../assets/Saly-35.png";
     function LearnMore(){
         location.href="#downloadApp";
+    }
+    
+    function GoToReviews(){
+        location.href="/reviews";
     }
 </script>
 
@@ -116,7 +124,7 @@
         </div>
     </section>
     
-    <!-- SECTION THREE-->
+    <!-- SECTION THREE -->
     <section id="features" class="max-md:mt-[50px] mt-[160px] w-full grid justify-center">
         <center class="mx-10 max-md:mx-2">
             <h1 class="max-md:text-[30px] max-md:mx-5 max-md:leading-[1.2] md:w-[800px] text-[88px] leading-[100px] text-center">Reason Why You Should Use <span class="text-[#FA6400] glancyr">CHUB</span></h1>
@@ -143,7 +151,34 @@
                 </div>
             </div>
         </center>
-        
-        
+    </section>
+    
+    <!-- SECTION FOUR -->
+    <section id="feedbacks" class="max-md:mt-[50px] mt-[160px] w-full grid justify-center">
+        <div class="absolute w-[90vw]" id="shapes">
+            
+            <img src={CylinderImg} alt="" class="w-[250px] h-[400px] mix-blend-difference float-left rotate-[-70deg] relative top-[-280px] left-[-10px]">
+            
+            <!-- <img src={CylinderImg} alt="" class="w-[200px] h-[250px] mix-blend-difference float-left rotate-[1.05deg] relative top-[-100px] right-[-500px]"> -->
+            
+            <img src={EllipsesImg} alt="" class="size-[120px] bg-[#FD8C48] rounded-full mix-blend-difference float-right rotate-[1.05deg] relative top-[-80px] right-[700px]">
+            
+            <div class="float-right rounded-[250px] bg-[#00CC99] relative h-[550px] w-[370px] top-[70px] right-[0px]"></div>
+            
+            <img src={BluePillImg} alt="" class="w-[200px] h-[250px] mix-blend-difference float-right rotate-[1.05deg] relative top-[-100px] right-[-500px]">
+        </div>
+        <div class="flex items-end pt-[50px] w-[90vw] justify-around px-10 bg-[#1e0a54] p-4 bg-blend-color-dodge text-white rounded-[60px]">
+            <div class="w-50% z-10 items-center">
+                <h1 class="max-md:text-[30px] max-md:mx-5 max-md:leading-[1.2] md:w-[650px] text-[88px] leading-[90px] text-white">What <span class="text-[#FA6400] glancyr">People</span> say about Challenge Hub</h1>
+                
+                <p class="max-md:text-[30px] max-md:mx-5 max-md:leading-[1.2] md:w-[460px] text-white text-[20px] font-[100]">One of the things i loved most about ths website was the ability to easily search for and find books that interested and helped me to quickly find books in specific genres or by specific authors</p>
+                
+                <button on:click={GoToReviews} class="buttons header-button my-[50px] mr-[16px] self-center duration-200"> Reviews</button>
+                
+            </div>
+            <div class="w-50% rounded-[60px] z-10">
+                <img src={SalyImg} alt="" class="w-[600px] h-[600px] rounded-[20px] rotate-[1.647deg]">
+            </div>
+        </div>
     </section>
 </main>
