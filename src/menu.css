@@ -1,10 +1,10 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     menu {
         display: none !important;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .header {
         display: none !important;
     }
@@ -16,7 +16,7 @@ menu {
     width: 90%;
     display: flex;
     padding: 1.2rem 1.7rem;
-    z-index: 2;
+    z-index: 999;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);

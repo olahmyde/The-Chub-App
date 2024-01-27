@@ -12,6 +12,12 @@
     import EllipsesImg from "../assets/Mask_group.svg";
     import BluePillImg from "../assets/Pill-Blue-Glossy-2.png";
     import SalyImg from "../assets/Saly-35.png";
+    import RoundCube from "../assets/RoundCube-White-Glossy.png";
+    import DarkPhone1 from "../assets/main.png";
+    import DarkPhone2 from "../assets/main-2.png";
+    import iPhoneStock1 from "../assets/Challenges1.png";
+    import iPhoneStock2 from "../assets/Challenges2.png";
+    import SToroid from "../assets/SuperToroid-White-Glossy.png";
     function LearnMore(){
         location.href="#downloadApp";
     }
@@ -21,15 +27,18 @@
     }
 </script>
 
+<!-- Active menu -->
+<menu>
+    <!-- <a class="nav--active" href='#home'><i class="fa-solid fa-house"></i></a> -->
+    <a class="nav--active" href='#home'>Home</a>
+    <a href='#features'> Features</a>
+    <a href='#integration'> Integration</a>
+    <a href='#blog'> Blog</a>
+    <a href='#about'> About</a>
+</menu>
+
 <main class="max-md:top-[80px] grid justify-center p-4 top-[293px] absolute w-full">
-    <menu>
-        <!-- <a class="nav--active" href='#home'><i class="fa-solid fa-house"></i></a> -->
-        <a class="nav--active" href='#home'>Home</a>
-        <a href='#features'> Features</a>
-        <a href='#integration'> Integration</a>
-        <a href='#blog'> Blog</a>
-        <a href='#about'> About</a>
-    </menu>
+    
     <!-- SECTION ONE-->
     <section id="title" class="max-md:mx-[20px] mx-[40px] grid grid-cols-1 bg-transparent">
         
@@ -47,7 +56,7 @@
                 </button>
             </a>
             
-            <a href="https://apps.apple.com/ng/app/chub/id6450390309">
+            <a href="https://apps.apple.com/app/chub/id6450390309">
                 <button class="download-button max-md:h-[70px] max-md:w-[300px] h-[80px] w-[320px] flex gap-2 leading-[2] justify-center items-center font-[300]">
                     <img class="size-[32px] bg-transparent" src={AppstoreImg} alt="playstore-logo">Download on Appstore
                 </button>
@@ -155,30 +164,69 @@
     
     <!-- SECTION FOUR -->
     <section id="feedbacks" class="max-md:mt-[50px] mt-[160px] w-full grid justify-center">
-        <div class="absolute w-[90vw]" id="shapes">
+        <div class="absolute md:w-[90vw] w-[100%]" id="shapes">
             
-            <img src={CylinderImg} alt="" class="w-[250px] h-[400px] mix-blend-difference float-left rotate-[-70deg] relative top-[-280px] left-[-10px]">
+            <img src={CylinderImg} alt="" class="w-[250px] max-md:w-[130px] h-[400px] max-md:h-[150px] mix-blend-difference float-left rotate-[-70deg] relative top-[-280px] max-md:top-[-70px] left-[-10px] max-md:left-[-50px]">
             
             <!-- <img src={CylinderImg} alt="" class="w-[200px] h-[250px] mix-blend-difference float-left rotate-[1.05deg] relative top-[-100px] right-[-500px]"> -->
             
-            <img src={EllipsesImg} alt="" class="size-[120px] bg-[#FD8C48] rounded-full mix-blend-difference float-right rotate-[1.05deg] relative top-[-80px] right-[700px]">
+            <img src={EllipsesImg} alt="" class="size-[120px] max-md:size-[70px] bg-[#FD8C48] rounded-full mix-blend-difference float-right rotate-[1.05deg] relative top-[-80px] max-md:top-[-30px] right-[700px] max-md:right-[180px]">
             
-            <div class="float-right rounded-[250px] bg-[#00CC99] relative h-[550px] w-[370px] top-[70px] right-[0px]"></div>
+            <div class="float-right rounded-[250px] bg-[#00CC99] relative h-[550px] max-md:h-[300px] w-[370px] max-md:w-[170px] top-[70px] max-md:top-[10px] right-[0px] max-md:right-[80px] max-lg:hidden"></div>
             
-            <img src={BluePillImg} alt="" class="w-[200px] h-[250px] mix-blend-difference float-right rotate-[1.05deg] relative top-[-100px] right-[-500px]">
+            <img src={BluePillImg} alt="" class="w-[200px] max-md:w-[100px] h-[250px] max-md:h-[120px] mix-blend-difference float-right rotate-[1.05deg] relative top-[-100px] max-md:top-[-45px] right-[-500px] max-md:right-[-35px]">
         </div>
-        <div class="flex items-end pt-[50px] w-[90vw] justify-around px-10 bg-[#1e0a54] p-4 bg-blend-color-dodge text-white rounded-[60px]">
-            <div class="w-50% z-10 items-center">
-                <h1 class="max-md:text-[30px] max-md:mx-5 max-md:leading-[1.2] md:w-[650px] text-[88px] leading-[90px] text-white">What <span class="text-[#FA6400] glancyr">People</span> say about Challenge Hub</h1>
+        <div class="flex max-md:flex-col-reverse items-end pt-[50px] w-[90vw] justify-around px-10 bg-[#1e0a54] p-4 bg-blend-color-dodge text-white rounded-[60px]">
+            <div class="md:w-[50%] items-center">
+                <h1 class="max-md:text-[30px] mb-5 max-md:mx-5 max-md:leading-[1.2] md:w-[650px] text-[88px] leading-[90px] text-white">What <span class="text-[#FA6400] glancyr">People</span> say about Challenge Hub</h1>
                 
-                <p class="max-md:text-[30px] max-md:mx-5 max-md:leading-[1.2] md:w-[460px] text-white text-[20px] font-[100]">One of the things i loved most about ths website was the ability to easily search for and find books that interested and helped me to quickly find books in specific genres or by specific authors</p>
+                <p class="max-md:text-[15px] max-md:mx-5 max-md:leading-[1.2] md:w-[460px] text-white text-[20px] font-[100]">One of the things i loved most about ths website was the ability to easily search for and find books that interested and helped me to quickly find books in specific genres or by specific authors</p>
                 
                 <button on:click={GoToReviews} class="buttons header-button my-[50px] mr-[16px] self-center duration-200"> Reviews</button>
                 
             </div>
-            <div class="w-50% rounded-[60px] z-10">
-                <img src={SalyImg} alt="" class="w-[600px] h-[600px] rounded-[20px] rotate-[1.647deg]">
+            <div class="md:w-[50%] flex rounded-[60px]">
+                <div class="md:hidden rounded-[250px] bg-[#00CC99] relative h-[300px] w-[170px] top-[0px] left-[100px]"></div>
+                <img src={SalyImg} alt="" class="w-[600px] h-[600px] max-md:size-[350px] relative left-[100px] max-md:top-[20px] rounded-[20px] rotate-[1.647deg]">
             </div>
+        </div>
+    </section>
+    
+    <!-- SECTION FIVE -->
+    <section id="preview" class="max-md:mt-[50px] h-[400px] mt-[250px] relative w-full grid justify-center  bg-[#1E0221]">
+        
+        <div class="flex w-[75vw] justify-between px-1 py-0 bg-[#3c0210] bg-blend-color-dodge gap-10 text-white rounded-[40px]">
+            
+            <div class="w-[60%] flex flex-row justify-left items-end relative">
+                <img src={RoundCube} alt="" class="absolute w-[15%] h-[25%]">
+                <img src={DarkPhone1} alt="" class="absolute w-[50%] h-[120%] ml-[70px] z-[3]">
+                <img src={iPhoneStock1} alt="" class="absolute w-[46%] h-[116%] ml-[86px] z-[4]">
+                <img src={DarkPhone2} alt="" class="absolute w-[46%] h-[85%] ml-[350px] z-[1]">
+                <img src={iPhoneStock2} alt="" class="absolute w-[40%] h-[81%] ml-[380px] z-[2]">
+            </div>
+            
+            <div class="w-[40%]">
+                <h1 class="text-[40px] mt-[30%] w-[65%] leading-10 text-white">Create your world with <span class="text-[#F1BB30] glancyr">CHUB</span></h1>
+                
+                <img src={SToroid} alt="" class="absolute w-[7%] mix-blend-lighten top-[28%] ml-[10%] color-[red] rotate-[10deg] z-[1]">
+                
+                <div class="flex mt-5 gap-5">
+                    <a href="https://play.google.com/store/apps/details?id=com.challenge365.app&hl=en&gl=US">
+                        <button class="download-button max-md:h-[50%] max-md:w-[50%] h-[60px] w-[200px] flex gap-2 leading-[1] justify-center items-center font-[300]">
+                            <img class="size-[32px] bg-transparent" src={PlaystoreImg} alt="playstore-logo">
+                            <span class="text-left">Download on <br>Playstore</span>
+                        </button>
+                    </a>
+                    
+                    <a href="https://apps.apple.com/app/chub/id6450390309">
+                        <button class="download-button max-md:h-[50%] max-md:w-[50%] h-[60px] w-[200px] flex gap-2 leading-[1] justify-center items-center font-[300]">
+                            <img class="size-[32px] bg-transparent" src={AppstoreImg} alt="playstore-logo">
+                            <span class="text-left">Download on <br>Appstore</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            
         </div>
     </section>
 </main>

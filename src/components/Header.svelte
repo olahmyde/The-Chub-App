@@ -1,5 +1,6 @@
 <script>
    export let y;
+   import ArrowMenu from "../assets/menu-arrow.svg";
    import ChubLogo from "../assets/wLogo_white.png"
    
    function downloadApp(){
@@ -18,10 +19,11 @@
         <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
         <img on:click={refreshPage} class="my-[24px] ml-[80px] bg-transparent " src={ChubLogo} alt='CHUB logo'>
         
-        <nav class="bg-transparent flex gap-5 my-[40px] self-center">
-            <a class="nav-links" href='#features'>Features</a>
-            <a class="nav-links" href='#integration'>Integration</a>
-            <a class="nav-links" href='#blog'>Blog</a>
+        <nav class="bg-transparent flex gap-20 my-[40px] self-center">
+            <a class="nav-links" href=''>Home </a>
+            <a class="nav-links flex gap-1" href='#features'>Features <img class="w-[20px]" src={ArrowMenu} /></a>
+            <a class="nav-links flex gap-1" href='#integration'>Integration <img class="w-[20px]" src={ArrowMenu} /></a>
+            <a class="nav-links flex gap-1" href='#blog'>Blog <img class="w-[20px]" src={ArrowMenu} /></a>
         </nav>
         <button on:click={downloadApp} class="buttons header-button my-[14px] mr-[16px] self-center duration-200"> Get Started</button>
     </div>

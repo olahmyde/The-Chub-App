@@ -6,6 +6,12 @@ export default {
       fontFamily: {
         glancyr: ['Glancyr', 'sans-serif'],
       },
+      // minWidth: {
+      //   '128': '32rem',
+      // },
+      // maxWidth: {
+      //   '128': '32rem',
+      // }
     }
   },
   plugins: []
