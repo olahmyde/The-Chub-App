@@ -37,10 +37,10 @@
     <a href='#about'> About</a>
 </menu>
 
-<main class="max-md:top-[80px] grid justify-center p-4 top-[293px] absolute w-full">
+<main class="grid justify-center p-4 lg:my-[200px] w-full">
     
-    <!-- SECTION ONE-->
-    <section id="title" class="max-md:mx-[20px] mx-[40px] grid grid-cols-1 bg-transparent">
+    <!-- SECTION ONE -->
+    <section id="title" class="max-md:mx-[20px] mx-[40px] p-7 grid grid-cols-1 bg-transparent">
         
         <div class="justify-center mb-4 flex lg:hidden">
             <img src="{ChubLogo}" alt="" class="w-[300px]">
@@ -64,7 +64,7 @@
         </div>
     </section>
     
-    <!-- SECTION TWO-->
+    <!-- SECTION TWO -->
     <section id="about" class="max-md:hidden mt-[200px] h-[800px] overflow-x-scroll w-full flex gap-3 bg-[#1E0221]">
         <div class="carousel flex flex-row gap-3">
             <!-- Slide 1 -->
@@ -136,11 +136,11 @@
     <!-- SECTION THREE -->
     <section id="features" class="max-md:mt-[50px] mt-[160px] w-full grid justify-center">
         <center class="mx-10 max-md:mx-2">
-            <h1 class="max-md:text-[30px] max-md:mx-5 max-md:leading-[1.2] md:w-[800px] text-[88px] leading-[100px] text-center">Reason Why You Should Use <span class="text-[#FA6400] glancyr">CHUB</span></h1>
+            <h1 class="max-md:text-[30px] max-md:mx-5 max-md:leading-[1.2] md:w-[80vw] text-[88px] leading-[100px] text-center">Reason Why You Should Use <span class="text-[#FA6400] glancyr">CHUB</span></h1>
             
             <p class="text-center mt-1 font-[100]">CHUB has several features that makes the go to for challenges</p>
             
-            <div class="flex gap-3 my-10 max-md:mx-0 lg:gap-7">
+            <div class="flex justify-center gap-3 my-10 max-md:mx-0 lg:gap-7">
                 <div class="mini-features bg-[#33023a] lg:w-[260px]">
                     <img class="bg-[#3C0345]" src={EmoticonImg} alt="">
                     <h3 class="mt-2">Easy to use</h3>
@@ -163,37 +163,36 @@
     </section>
     
     <!-- SECTION FOUR -->
-    <section id="feedbacks" class="max-md:mt-[50px] mt-[160px] w-full grid justify-center">
-        <div class="absolute md:w-[90vw] w-[100%]" id="shapes">
+    <section id="feedbacks" class="grid justify-center max-sm:mt-[50px] mt-[160px] w-full"> 
+        <!-- SHAPES -->
+        <div class="flex justify-between w-full h-0" id="shapes">
+            <img src={CylinderImg} alt="" class="w-[250px] max-md:w-[130px] h-[400px] max-md:h-[150px] mix-blend-difference float-left rotate-[-70deg] relative top-[-280px] max-md:top-[-100px] left-[-10px] max-md:left-[-50px]">
             
-            <img src={CylinderImg} alt="" class="w-[250px] max-md:w-[130px] h-[400px] max-md:h-[150px] mix-blend-difference float-left rotate-[-70deg] relative top-[-280px] max-md:top-[-70px] left-[-10px] max-md:left-[-50px]">
+            <img src={EllipsesImg} alt="" class="size-[120px] max-md:size-[70px] bg-[#FD8C48] rounded-full mix-blend-difference rotate-[1.05deg] relative top-[-80px] max-md:top-[-30px]">
             
-            <!-- <img src={CylinderImg} alt="" class="w-[200px] h-[250px] mix-blend-difference float-left rotate-[1.05deg] relative top-[-100px] right-[-500px]"> -->
-            
-            <img src={EllipsesImg} alt="" class="size-[120px] max-md:size-[70px] bg-[#FD8C48] rounded-full mix-blend-difference float-right rotate-[1.05deg] relative top-[-80px] max-md:top-[-30px] right-[700px] max-md:right-[180px]">
-            
-            <div class="float-right rounded-[250px] bg-[#00CC99] relative h-[550px] max-md:h-[300px] w-[370px] max-md:w-[170px] top-[70px] max-md:top-[10px] right-[0px] max-md:right-[80px] max-lg:hidden"></div>
-            
-            <img src={BluePillImg} alt="" class="w-[200px] max-md:w-[100px] h-[250px] max-md:h-[120px] mix-blend-difference float-right rotate-[1.05deg] relative top-[-100px] max-md:top-[-45px] right-[-500px] max-md:right-[-35px]">
+            <img src={BluePillImg} alt="" class="w-[200px] max-md:w-[100px] h-[250px] max-md:h-[120px] mix-blend-difference rotate-[1.05deg] relative top-[-140px] max-md:top-[-45px] lg:right-20">
         </div>
-        <div class="flex max-md:flex-col-reverse items-end pt-[50px] w-[90vw] justify-around px-10 bg-[#1e0a54] p-4 bg-blend-color-dodge text-white rounded-[60px]">
-            <div class="md:w-[50%] items-center">
-                <h1 class="max-md:text-[30px] mb-5 max-md:mx-5 max-md:leading-[1.2] md:w-[650px] text-[88px] leading-[90px] text-white">What <span class="text-[#FA6400] glancyr">People</span> say about Challenge Hub</h1>
-                
-                <p class="max-md:text-[15px] max-md:mx-5 max-md:leading-[1.2] md:w-[460px] text-white text-[20px] font-[100]">One of the things i loved most about ths website was the ability to easily search for and find books that interested and helped me to quickly find books in specific genres or by specific authors</p>
-                
-                <button on:click={GoToReviews} class="buttons header-button my-[50px] mr-[16px] self-center duration-200"> Reviews</button>
-                
+        
+        <!-- FEEDBACK -->
+        <div class="flex max-lg:flex-col-reverse items-center pt-[50px] w-[90vw] justify-around px-10 max-md:px-5 bg-[#1e0a54] p-4 bg-blend-color-dodge text-white rounded-[60px] max-md:gap-10">
+            <div class="w-[100%] max-md:text-center items-center">
+                <h1 class="max-lg:text-[30px] mb-5 lg:mt-10 max-md:mx-5 max-md:leading-[1.2] md:w-[650px] text-[88px] leading-[1] text-white">What <span class="text-[#FA6400] glancyr">People</span> say about Challenge Hub</h1>
+                <p class="max-md:text-[15px] max-md:mx-5 max-md:leading-[1.2] md:w-[460px] text-white text-[20px] font-[100]">"One of the things i loved most about ths website was the ability to easily search for and find books that interested and helped me to quickly find books in specific genres or by specific authors" - Anonymous</p>
+                <div class="text-center max-md:flex max-md:justify-center">
+                    <button on:click={GoToReviews} class="buttons header-button my-[50px] mr-[16px] self-center duration-200"> Reviews</button>
+                </div>
             </div>
-            <div class="md:w-[50%] flex rounded-[60px]">
-                <div class="md:hidden rounded-[250px] bg-[#00CC99] relative h-[300px] w-[170px] top-[0px] left-[100px]"></div>
-                <img src={SalyImg} alt="" class="w-[600px] h-[600px] max-md:size-[350px] relative left-[100px] max-md:top-[20px] rounded-[20px] rotate-[1.647deg]">
+            
+            <div class="w-[100%] flex justify-center">
+                <div class="w-[400px] h-[600px] z-10 max-md:h-[210px] max-md:w-[150px] relative left-[0px] max-md:top-[20px] rounded-[270px] rotate-[1.647deg] bg-[#00CC99]">
+                    <img src={SalyImg} alt="" class="w-full h-full relative right-8 object-cover rotate-[1.647deg]">
+                </div>
             </div>
         </div>
     </section>
     
     <!-- SECTION FIVE -->
-    <section id="preview" class="max-md:mt-[50px] h-[400px] mt-[250px] relative w-full grid justify-center  bg-[#1E0221]">
+    <section id="preview" class="max-md:my-[50px] h-[400px] mt-[250px] relative w-full grid justify-center bg-[#1E0221] max-[900px]:hidden">
         
         <div class="flex w-[75vw] justify-between px-1 py-0 bg-[#3c0210] bg-blend-color-dodge gap-10 text-white rounded-[40px]">
             

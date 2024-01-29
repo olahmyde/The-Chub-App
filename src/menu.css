@@ -13,8 +13,9 @@
 menu {
     background: rgba(0, 0, 0, 0.3);
     /* width: max-content; */
-    width: 90%;
+    width: 95vw;
     display: flex;
+    justify-content: space-around;
     padding: 1.2rem 1.7rem;
     z-index: 999;
     position: fixed;
@@ -36,7 +37,7 @@ menu a {
     color: var(--color-light);
     font-size: 0.9rem;
     transition: 400ms;
-    width: 100%;
+    width: fit-content;
 }
 
 menu a:hover {

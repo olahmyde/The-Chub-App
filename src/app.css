@@ -114,6 +114,16 @@
 body {
    background-color: #1e0221;
    font-family: "Bricolage Grotesque";
+   height: auto;
+}
+
+footer {
+   /* height: 600px; */
+   height: auto;
+   width: 100%;
+   bottom: 0;
+   background-color: #37083c;
+   margin-top: 100px;
 }
 
 h1,
@@ -155,6 +165,7 @@ h3,
       #690571 0%,
       rgba(250, 100, 0, 0.5) 277.78%
    );
+   
    display: flex;
    width: 220px;
    height: 72px;
@@ -195,27 +206,27 @@ h3,
 }
 
 .mini-features {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
-    align-items: center;
-    border-radius: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 2rem;
+   align-items: center;
+   border-radius: 30px;
 }
 
 .mini-features img {
-    width: 44px;
-    padding: 10px;
-    border-radius: 50%;
+   width: 44px;
+   padding: 10px;
+   border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
-    .mini-features {
-        display: flex;
-        justify-content: center;
-        padding: 1rem;
-        flex-direction: column;
-        font-size: 0.6rem;
-        border-radius: 10px;
-    }
+   .mini-features {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      flex-direction: column;
+      font-size: 0.6rem;
+      border-radius: 10px;
+   }
 }
