@@ -202,7 +202,7 @@ h3,
 }
 
 .carousel {
-   animation: slideAnimation 60s ease-in-out infinite;
+   animation: slideAnimation 10s ease-in-out infinite;
 }
 
 .mini-features {

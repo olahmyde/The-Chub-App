@@ -42,12 +42,12 @@
     <!-- SECTION ONE -->
     <section id="title" class="max-md:mx-[20px] mx-[40px] p-7 grid grid-cols-1 bg-transparent">
         
-        <div class="justify-center mb-4 flex lg:hidden">
-            <img src="{ChubLogo}" alt="" class="w-[300px]">
+        <div class="justify-center mb-4 flex max-md:w-[full] lg:hidden">
+            <img src="{ChubLogo}" alt="" class="w-[100px]">
         </div>
         <h1 class="max-md:text-[30px] max-md:leading-[1.2] text-[88px] leading-[100px] text-center">Master your goals with <span class="text-[#FA6400] glancyr">playful productivity</span></h1>
         
-        <p class="text-center mt-1 font-[100]">Boost productivity and attain your set goals with our gamified aided by the power of community support and social networks</p>
+        <p class="text-center mt-3 lg:mt-10 font-[100]">Boost productivity and attain your set goals with our gamified aided by the power of community support and social networks</p>
         
         <div class="max-md:grid max-md:mt-8 flex justify-center max-md:gap-4 gap-10 mt-[75px]">
             <a href="https://play.google.com/store/apps/details?id=com.challenge365.app&hl=en&gl=US">
@@ -176,7 +176,7 @@
         <!-- FEEDBACK -->
         <div class="flex max-lg:flex-col-reverse items-center pt-[50px] w-[90vw] justify-around px-10 max-md:px-5 bg-[#1e0a54] p-4 bg-blend-color-dodge text-white rounded-[60px] max-md:gap-10">
             <div class="w-[100%] max-md:text-center items-center">
-                <h1 class="max-lg:text-[30px] mb-5 lg:mt-10 max-md:mx-5 max-md:leading-[1.2] md:w-[650px] text-[88px] leading-[1] text-white">What <span class="text-[#FA6400] glancyr">People</span> say about Challenge Hub</h1>
+                <h1 class="max-lg:text-[25px] mb-5 lg:mt-10 max-md:mx-5 max-md:leading-[1.2] md:w-[650px] text-[88px] leading-[1] text-white">What <span class="text-[#FA6400] glancyr">People</span> say about Challenge Hub</h1>
                 <p class="max-md:text-[15px] max-md:mx-5 max-md:leading-[1.2] md:w-[460px] text-white text-[20px] font-[100]">"One of the things i loved most about ths website was the ability to easily search for and find books that interested and helped me to quickly find books in specific genres or by specific authors" - Anonymous</p>
                 <div class="text-center max-md:flex max-md:justify-center">
                     <button on:click={GoToReviews} class="buttons header-button my-[50px] mr-[16px] self-center duration-200"> Reviews</button>
